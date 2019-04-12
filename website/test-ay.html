@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="test-ay.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPS Form - ALYB</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <main>
+        <section class="form-container">
+            <form method="POST" action="https://httpbin.org/anything" class="form">
+                <img class="banner" src="banner@2x.png">
+                <div class="title">
+                    <h1>Student subscription</h1>
+                    <div class="subtitle">Fill the following form to submit your application</div>
+                </div>
+                <div class="fields">
+                    <div class="field">
+                        <label>First name</label>
+                        <div class="inputs">
+                            <input name="firstname" type="text" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Last Name</label>
+                        <div class="inputs">
+                            <input name="lastname" type="text" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Course</label>
+                        <div class="inputs">
+                            <input name="course" type="text" required>
+                        </div>
+                    </div>
+                    <div class="field field-dob">
+                        <label>Date of birth</label>
+                        <div class="inputs">
+                            <input name="dob_day" type="number" placeholder="DD" min="1" max="31">
+                            <span>/</span>
+                            <input name="dob_month" type="number" placeholder="MM" min="1" max="12">
+                            <span>/</span>
+                            <input name="dob_year" class="year" type="number" placeholder="YYYY" min="1900" max="2019">
+                        </div>
+                    </div>
+                    <div class="field field-col-3">
+                        <label>Gender</label>
+                        <div class="inputs flex">
+                            <button type="button" class="btn">Man</button>
+                            <button type="button" class="btn">Woman</button>
+                            <button type="button" class="btn">Non-binary</button>
+                        </div>
+                    </div>
+                    <div class="field field-col-2">
+                        <label>Option</label>
+                        <div class="subtitle">Select all desired options</div>
+                        <div class="inputs flex">
+                            <button type="button" class="btn">Language</button>
+                            <button type="button" class="btn">Art</button>
+                            <button type="button" class="btn">Music</button>
+                            <button type="button" class="btn">Science</button>
+                        </div>
+                    </div>
+                    <div class="field field-col-7">
+                        <label>Day</label>
+                        <div class="subtitle">Select desired days</div>
+                        <div class="inputs flex">
+                            <button type="button" class="botn">Mon</button>
+                            <button type="button" class="botn">Tue</button>
+                            <button type="button" class="botn">Wed</button>
+                            <button type="button" class="botn">Thu</button>
+                            <button type="button" class="botn">Fri</button>
+                            <button type="button" class="botn">Sat</button>
+                            <button type="button" class="botn">Sun</button>
+                        </div>
+                    </div>
+                    <div class="field field-submit">
+                        <div class="inputs">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                    <div class="field field-reset">
+                        <div class="inputs">
+                            <button type="reset">Reset form</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="test-ay.js"></script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 100;
+  src: url("Inter-Thin-BETA.woff2") format("woff2"),
+       url("Inter-Thin-BETA.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 100;
+  src: url("Inter-ThinItalic-BETA.woff2") format("woff2"),
+       url("Inter-ThinItalic-BETA.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 200;
+  src: url("Inter-ExtraLight-BETA.woff2") format("woff2"),
+       url("Inter-ExtraLight-BETA.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 200;
+  src: url("Inter-ExtraLightItalic-BETA.woff2") format("woff2"),
+       url("Inter-ExtraLightItalic-BETA.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 300;
+  src: url("Inter-Light-BETA.woff2") format("woff2"),
+       url("Inter-Light-BETA.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 300;
+  src: url("Inter-LightItalic-BETA.woff2") format("woff2"),
+       url("Inter-LightItalic-BETA.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("Inter-Regular.woff2") format("woff2"),
+       url("Inter-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  src: url("Inter-Italic.woff2") format("woff2"),
+       url("Inter-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  src: url("Inter-Medium.woff2") format("woff2"),
+       url("Inter-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 500;
+  src: url("Inter-MediumItalic.woff2") format("woff2"),
+       url("Inter-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 600;
+  src: url("Inter-SemiBold.woff2") format("woff2"),
+       url("Inter-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 600;
+  src: url("Inter-SemiBoldItalic.woff2") format("woff2"),
+       url("Inter-SemiBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  src: url("Inter-Bold.woff2") format("woff2"),
+       url("Inter-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 700;
+  src: url("Inter-BoldItalic.woff2") format("woff2"),
+       url("Inter-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 800;
+  src: url("Inter-ExtraBold.woff2") format("woff2"),
+       url("Inter-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 800;
+  src: url("Inter-ExtraBoldItalic.woff2") format("woff2"),
+       url("Inter-ExtraBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  src: url("Inter-Black.woff2") format("woff2"),
+       url("Inter-Black.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 900;
+  src: url("Inter-BlackItalic.woff2") format("woff2"),
+       url("Inter-BlackItalic.woff") format("woff");
+}
+
+/* -------------------------------------------------------
+Variable font.
+Usage:
+
+  html { font-family: 'Inter', sans-serif; }
+  @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+  }
+*/
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("Inter-upright.var.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("Inter-italic.var.woff2") format("woff2");
+}
+
+
+/* --------------------------------------------------------------------------
+[EXPERIMENTAL] Multi-axis, single variable font.
+
+Slant axis is not yet widely supported (as of February 2019) and thus this
+multi-axis single variable font is opt-in rather than the default.
+
+When using this, you will probably need to set font-variation-settings
+explicitly, e.g.
+
+  * { font-variation-settings: "slnt" 0deg }
+  .italic { font-variation-settings: "slnt" 10deg }
+
+*/
+@font-face {
+  font-family: 'Inter var experimental';
+  font-weight: 100 900;
+  font-style: oblique 0deg 10deg;
+  src: url("Inter.var.woff2") format("woff2");
+}
+
+/*
+Font weight:
+- Black
+- Regular
+- Medium
+- Semi bold
+
+Font style:
+- Italic
+
+Font size:
+- 36px
+- 14px
+- 12px
+- 10px
+
+Colors:
+- White: #FCAB10
+- Background: #F7F7F7
+- Overlay background: rgba(0, 0, 0, 0.04)
+- Yellow: #FCAB10
+- Black: #1E1E1E
+- Gray: #EAEAEA
+- Red: #D7263D
+- Green: #A1AF3E
+- Blue: #3C91E6
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
+body {
+  font: normal 14px/1.14 'Inter';
+  margin: 0;
+}
+
+.form {
+  display: block;
+  width: 576px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 11 0 0 24;
+}
+
+.title {
+  margin-top: 11px;
+}
+
+.title h1 {
+  font-size: 36px;
+  font-weight: 800;
+  height: 43px;
+  color: #FCAB10;
+  text-align: center;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.title .subtitle {
+  margin-top: 0;
+  text-align: center;
+  font-style: normal;
+  opacity: .46;
+  letter-spacing: -0.02em;
+}
+
+.fields {
+  margin: 24px 98px;
+  padding-bottom: 24px;
+}
+
+.ic {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url(ic-check.svg) no-repeat center/contain;
+}
+
+label {
+  display: block;
+  color:#1E1E1E;
+  opacity: .46;
+  margin-bottom: 8px;
+}
+
+input,
+button {
+  background: #fff;
+  border: 1px solid #EAEAEA;
+  border-radius: 4px;
+  font-size: 12px;
+  height: 38px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.selected:before {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url(ic-check.svg) no-repeat center/contain;
+  margin-right: 4px;
+}
+
+.field.field-col-7 button.selected:before {
+  display: none;
+}
+
+button.selected {
+  color: #A1AF3E;
+  border-color: #A1AF3E;
+}
+
+input {
+  display: block;
+  width: 100%;
+}
+
+input::placeholder {
+  color: rgba(30, 30, 30, 0.46);
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.field:not(:first-child) {
+  margin-top: 16px;
+}
+
+.field.field-submit {
+  margin-top: 30px;
+}
+
+.field.field-reset {
+  margin-top: 5px;
+}
+
+.field.field-dob .inputs {
+  display: flex;
+  align-items: center;
+}
+
+.field.field-dob input {
+  display: inline-block;
+  width: 39px;
+  text-align: center;
+}
+
+.field.field-dob span {
+  margin: 0 9px;
+}
+
+.field.field-dob input.year {
+  width: 78px;
+}
+
+/*.field.field-dob .label {
+  margin-bottom: 16px;
+}*/
+
+.field .subtitle {
+  margin-top: -4px;
+  margin-bottom: 8px;
+  opacity: .46;
+}
+
+.field .inputs.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.field.field-col-3 button {
+  width: 114px;
+}
+
+.field.field-col-3 button:nth-child(n + 4) {
+  margin-top: 16px;
+}
+
+.field.field-col-2 .inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.field.field-col-2 button {
+  width: 176px;
+}
+
+.field.field-col-2 button:nth-child(n + 3) {
+  margin-top: 10px;
+}
+
+.field.field-col-7 .inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.field.field-col-7 button {
+  width: 48px;
+  margin: 0 0px;
+}
+
+.field.field-submit .inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.field.field-submit button {
+  width: 380px;
+  background-color: #D7263D;
+  color: #F7F7F7;
+  height: 46px;
+  border: none;
+}
+
+.field.field-reset .inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.field.field-reset button {
+  background-color: #F7F7F7;
+  border-color: #F7F7F7;
+  color: #3C91E6;
+  text-decoration: underline;
+  height: 18px;
+}
