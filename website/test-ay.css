@@ -226,7 +226,6 @@ body {
   width: 576px;
   margin: auto;
   background: rgba(0, 0, 0, 0.04);
-  padding: 11 0 0 24;
 }
 
 .title {
@@ -255,9 +254,24 @@ body {
   letter-spacing: -0.02em;
 }
 
+.success {
+  display: none;
+  text-align: center;
+  color:#A1AF3E;
+  padding: 10px;
+}
+
+.form-container.form-success .success {
+  display: block;
+}
+
 .fields {
   margin: 24px 98px;
   padding-bottom: 24px;
+}
+
+.form-container.form-success .fields {
+  display: none;
 }
 
 .ic {
