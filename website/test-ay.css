@@ -255,9 +255,27 @@ body {
   letter-spacing: -0.02em;
 }
 
+div.success {
+  text-align: center;
+  display: none;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  color: #A1AF3E;
+  font-style:  italic;
+
+}
+
+.form-container.form-success .success {
+  display: block;
+}
+
 .fields {
   margin: 24px 98px;
   padding-bottom: 24px;
+}
+
+.form-container.form-success .fields {
+  display: none;
 }
 
 .ic {
