@@ -3,7 +3,7 @@ const optionButtons = document.querySelectorAll('.field-col-2 button')
 const dayButtons = document.querySelectorAll('.field-col-7 button')
 const inputs = document.querySelectorAll('form input')
 const form = document.querySelector('form')
-const reset = document.querySelector('.field-reset button') 
+const resetButton = document.querySelector('.field-reset button')
 const formcontainer = document.querySelector('.form-container')
 
 let gender = ""
@@ -34,20 +34,20 @@ optionButtons.forEach(button => {
     })
 })
 
-    reset.addEventListener('click', ()=> {
-        gender=""
-        options=[]
-        days=[]
-        genderButtons.forEach((button) => {
-            button.classList.remove('selected')
-        })
-        optionButtons.forEach((button) => {
-            button.classList.remove('selected')
-        })
-        dayButtons.forEach((button) => {
-            button.classList.remove('selected')
-        })
+resetButton.addEventListener('click', () => {
+    gender= ''
+    options= []
+    days= []
+    genderButtons.forEach((button) => {
+        button.classList.remove('selected')
     })
+    optionButtons.forEach(button => {
+        button.classList.remove('selected')
+    })
+    dayButtons.forEach(button => {
+        button.classList.remove('selected')
+    })
+})
 
 dayButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -87,10 +87,10 @@ form.addEventListener('submit', event => {
         return response.json()
     }).then(json => {
         console.log(json)
-        if (json.success){
+        if(json.success){
             formcontainer.classList.add('form-success')
         }
-    }) 
+    })
     .catch(err => {
     })
     return false

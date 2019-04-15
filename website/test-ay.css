@@ -226,7 +226,6 @@ body {
   width: 576px;
   margin: auto;
   background: rgba(0, 0, 0, 0.04);
-  padding: 11 0 0 24;
 }
 
 .title {
@@ -255,14 +254,11 @@ body {
   letter-spacing: -0.02em;
 }
 
-div.success {
-  text-align: center;
+.success {
   display: none;
-  margin-top: 30px;
-  padding-bottom: 50px;
-  color: #A1AF3E;
-  font-style:  italic;
-
+  text-align: center;
+  color:#A1AF3E;
+  padding: 10px;
 }
 
 .form-container.form-success .success {
