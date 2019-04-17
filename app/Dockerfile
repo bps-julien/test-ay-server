@@ -1,6 +1,6 @@
 FROM node:10
 
-WORKDIR /var/projects/app
+WORKDIR /var/projects/app/
 
 COPY package*.json .
 
