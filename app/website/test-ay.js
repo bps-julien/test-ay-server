@@ -5,6 +5,33 @@ const inputs = document.querySelectorAll('form input')
 const form = document.querySelector('form')
 const resetButton = document.querySelector('.field-reset button')
 const formcontainer = document.querySelector('.form-container')
+const fetchApi = (url, method, data) => {
+    const request = {
+        method: method,
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+    }
+    if (data){
+        request.body =  JSON.stringify(data)
+    }
+    fetch('http://localhost:8889' + url, request).then(response => {
+        if(!response.ok) {
+            response.text().then(text => console.log(text))
+        }
+        return response.json()
+    }).then(json => {
+        console.log(json)
+    })
+    .catch(err => {
+        console.log(err)
+    })
+}
+// fetchApi('/api/users/2a48977d-4e99-4645-b316-966b08112c68', 'GET', null)
+// fetchApi('/api/users/2a48977d-4e99-4645-b316-966b08112c68', 'PATCH', {test1 : 1})
+// fetchApi('/api/users/2a48977d-4e99-4645-b316-966b08112c68', 'DELETE', null)
+fetchApi('/api/users', 'GET', null)
 
 let gender = ""
 let options = []
