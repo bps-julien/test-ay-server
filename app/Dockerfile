@@ -1,8 +1,8 @@
 FROM node:10
 
-WORKDIR /var/projects/app/
+WORKDIR /var/projects/app
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install
 
